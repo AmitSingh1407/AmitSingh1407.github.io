@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Kumar Singh - Data Scientist & AI Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("O1ONws53FULxlsldH");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1 class="creative-name">
+            <span>A</span>
+            <span>m</span>
+            <span>i</span>
+            <span>t</span>
+          </h1>
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- Nav Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="sidebar">
+      <ul class="sidebar-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">
+            <i data-lucide="brain"></i> AI & Data Science Professional
+          </span>
+          <p class="title">Data Scientist & AI Engineer</p>
+          <div class="tech-stack">
+            <span class="tech-item">Python</span>
+            <span class="tech-item">Machine Learning</span>
+            <span class="tech-item">Data Analysis</span>
+            <span class="tech-item">AI</span>
+          </div>
+          <p class="subtitle">
+            Transforming raw data into actionable insights through advanced analytics
+            and machine learning. Specializing in building intelligent solutions that
+            drive business innovation.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/amit9129" class="social-icon" aria-label="GitHub" target="_blank"
+              rel="noopener noreferrer">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <!-- <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email">
+              <i data-lucide="mail"></i> -->
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i data-lucide="chevrons-down"></i>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <div class="about__container container grid">
+        <img src="image/cropped_image.png" alt="Amit Kumar Singh" class="about__img">
+        <div class="about__data">
+          <p class="about__description">
+            As a recent graduate with a Bachelor's degree in Computer Application specializing in Data Science and
+            Artificial Intelligence, I bring a fresh perspective and cutting-edge knowledge to the field. My passion
+            lies in transforming complex data into actionable insights and building intelligent systems that solve
+            real-world problems.
+          </p>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">04+</span>
+              <span class="about__info-name">Years of <br> experience</span>
+            </div>
+            <div>
+              <span class="about__info-title">20+</span>
+              <span class="about__info-name">Completed <br> projects</span>
+            </div>
+          </div>
+
+          <!-- Download CV Button -->
+          <div class="about__buttons">
+            <a download="" href="PDF/Amit_Singh Resume.pdf" class="cv-button">
+              <i class="uil uil-download-alt"></i> Download CV
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2>Technical Expertise</h2>
+        <div class="skills-grid" id="skills-container">
+          <!-- Skills will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid" id="projects-container">
+          <!-- Projects will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section bg-gray">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-card">
+          <div class="education-icon">
+            <i data-lucide="book-open"></i>
+          </div>
+          <div class="education-content">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Specialization in Data Science and Artificial Intelligence</p>
+            <p class="year">2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications-section">
+      <div class="container">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <div class="certificates-grid">
+          <!-- IBM Cloud Certificate -->
+          <div class="certificate-card" data-aos="fade-up">
+            <div class="certificate-header">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo"
+                class="company-logo">
+              <div class="certificate-badge">
+                <span class="badge-text">Verified</span>
+              </div>
+            </div>
+            <div class="certificate-content">
+              <h3>Introduction to Cloud</h3>
+              <p class="issuer">IBM SkillsBuild</p>
+              <p class="date">April 21, 2024</p>
+              <div class="skills-tags">
+                <span class="skill-tag">Cloud Computing</span>
+                <span class="skill-tag">IBM Cloud</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Concepts Certificate -->
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="certificate-header">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo"
+                class="company-logo">
+              <div class="certificate-badge">
+                <span class="badge-text">Verified</span>
+              </div>
+            </div>
+            <div class="certificate-content">
+              <h3>Introduction to Data Concepts</h3>
+              <p class="issuer">IBM SkillsBuild</p>
+              <p class="date">April 27, 2023</p>
+              <div class="skills-tags">
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Big Data</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Certificate -->
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="certificate-header">
+              <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python Logo"
+                class="company-logo">
+              <div class="certificate-badge">
+                <span class="badge-text">Verified</span>
+              </div>
+            </div>
+            <div class="certificate-content">
+              <h3>Python for Data Science</h3>
+              <p class="issuer">Digipodium</p>
+              <p class="date">March 2024</p>
+              <div class="skills-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Data Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Predictive Modeling Certificate -->
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="certificate-header">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo"
+                class="company-logo">
+              <div class="certificate-badge">
+                <span class="badge-text">Verified</span>
+              </div>
+            </div>
+            <div class="certificate-content">
+              <h3>Predictive Modeling Fundamentals I</h3>
+              <p class="issuer">Cognitive Class</p>
+              <p class="date">November 7, 2023</p>
+              <div class="skills-tags">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Predictive Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section> -->
+    <section class="contact-section fade-in" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p><a href="tel:+1234567890">+91 9129187074</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:amit.singh@example.com">kumaramit.14singh@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Lucknow, India</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/amit9129" class="social-icon" aria-label="GitHub" target="_blank"
+          rel="noopener noreferrer">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+    </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">&copy; 2024 Amit Singh. All rights reserved.</p>
+        <div class="footer-nav">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">Projects</a>
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
