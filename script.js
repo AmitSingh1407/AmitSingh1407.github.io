@@ -317,21 +317,77 @@ function showNotification(message, type) {
 lucide.createIcons();
 
 // Contact Form Handling
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contactForm");
 
-  const formData = {
-    name: document.getElementById("name").value,
-    phone: document.getElementById("phone").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-  // Send email using EmailJS
-  emailjs
-    .send("service_zvhzbwk", "template_5syk4kn", formData)
-    .then(() => alert("Message sent successfully!"))
-    .catch(() => alert("Failed to send message."));
+      // Get form values
+      const formData = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
+
+      // Basic form validation
+      let isValid = true;
+      Object.keys(formData).forEach((key) => {
+        const input = document.getElementById(key);
+        if (!formData[key].trim()) {
+          input.classList.add("input-error");
+          isValid = false;
+        } else {
+          input.classList.remove("input-error");
+        }
+      });
+
+      if (!isValid) {
+        showNotification("Please fill in all fields", "error");
+        return;
+      }
+
+      // Show loading state
+      const submitButton = document.querySelector(".submit-button");
+      const originalButtonText = submitButton.innerHTML;
+      submitButton.innerHTML =
+        '<i data-lucide="loader-2" class="animate-spin"></i> Sending...';
+      submitButton.disabled = true;
+
+      // Send email using EmailJS
+      emailjs
+        .send(
+          "service_zvhzbwk", // Replace with your EmailJS service ID
+          "template_5syk4kn", // Replace with your EmailJS template ID
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
+            to_name: "Amit Kumar Singh",
+          }
+        )
+        .then(
+          function (response) {
+            showNotification("Message sent successfully!", "success");
+            document.getElementById("contactForm").reset();
+          },
+          function (error) {
+            showNotification("Failed to send message. Please try again.", "error");
+          }
+        )
+        .finally(() => {
+          // Reset button state
+          submitButton.innerHTML = originalButtonText;
+          submitButton.disabled = false;
+          lucide.createIcons(); // Recreate icons after DOM update
+        });
+    });
+  } else {
+    console.error("Error: #contactForm not found in the DOM.");
+  }
 });
 // Contact Form Handling
 // (This section is removed as it is a duplicate)
