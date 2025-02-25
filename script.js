@@ -10,7 +10,7 @@ sidebar.addEventListener("click", () => {
 });
 
 // Initialize EmailJS with your public key
-emailjs.init("O1ONws53FULxlsldH");
+emailjs.init("GpueqBAnzh-GFcfq-");
 
 // Enhanced Skills data with descriptions
 const skills = [
@@ -260,14 +260,14 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   // Send email using EmailJS
   emailjs
     .send(
-      "service_zvhzbwk", // Replace with your EmailJS service ID
-      "template_5syk4kn", // Replace with your EmailJS template ID
+      "service_efqoqlc", // Replace with your EmailJS service ID
+      "template_j6q0ayp", // Replace with your EmailJS template ID
       {
         from_name: formData.name,
         from_email: formData.email,
         phone: formData.phone,
         message: formData.message,
-        to_name: "Amit Kumar Singh",
+        to_name: "Amit Singh",
       }
     )
     .then(
