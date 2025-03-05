@@ -88,6 +88,16 @@ const projects = [
     sourceCode:
       "https://github.com/amit9129/Data_Science-Project/tree/main/Zomato_analysis",
   },
+    {
+    title: "Airbub Data Analysis",
+    description:
+      "The Airbnb Case Study focuses on analyzing Airbnb listing data to extract meaningful insights. It involves exploratory data analysis (EDA) to examine pricing trends, availability, customer reviews, and other key factors affecting Airbnb properties.",
+    tech: ["Python", "Pandas" , "NumPy", "Matplotlib", "Seaborn","Jupyter Notebook"],
+    icon: "bar-chart",
+
+    sourceCode:
+      "https://github.com/amit9129/Data_Science-Project/tree/main/Zomato_analysis",
+  },
 ];
 
 // Populate projects with buttons
