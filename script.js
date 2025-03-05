@@ -88,16 +88,6 @@ const projects = [
     sourceCode:
       "https://github.com/AmitSingh1407/Data_Science-Project/tree/c4c31192d7cbcc7391f0e7d2d71f2a1b978ced27/AirBub%20analysis",
   },
-  {
-    title: "Airbnb Data Analysis",
-    description:
-      "Comprehensive analysis of Airbnb data to uncover trends, pricing strategies, and market insights. Used data visualization and statistical methods for deep analysis.",
-    tech: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
-    icon: "bar-chart",
-    sourceCode:
-      "https://github.com/YOUR_GITHUB_LINK/Airbnb_Case_Study", // Replace with your actual repo link
-  },
-  // Keep existing projects here...
 ];
 
 // Populate projects with buttons
