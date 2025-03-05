@@ -88,8 +88,6 @@ const projects = [
     sourceCode:
       "https://github.com/AmitSingh1407/Data_Science-Project/tree/c4c31192d7cbcc7391f0e7d2d71f2a1b978ced27/AirBub%20analysis",
   },
-    {
-    const projects = [
   {
     title: "Airbnb Data Analysis",
     description:
