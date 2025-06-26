@@ -44,15 +44,20 @@ const skills = [
     level: 75,
     description: "Predictive modeling & algorithms",
   },
-  {
-    name: "Data Analysis",
-    level: 85,
-    description: "Statistical analysis & insights",
-  },
+  // {
+  //   name: "Data Analysis",
+  //   level: 85,
+  //   description: "Statistical analysis & insights",
+  // },
   {
     name: "AI",
     level: 75,
     description: "Artificial Intelligence applications",
+  },
+  {
+    name: "Power BI",
+    level: 75,
+    description: "Business analytics & data visualization",
   },
 ];
 
@@ -97,6 +102,16 @@ const projects = [
 
     sourceCode:
       "https://github.com/AmitSingh1407/Data_Science-Project/tree/c4c31192d7cbcc7391f0e7d2d71f2a1b978ced27/AirBub%20analysis",
+  },
+    {
+    title: "ADIDAS SALES ANALYSIS",
+    description:
+      "The ADIDAS Sales Analysis Dashboard is an interactive business intelligence solution developed using Power BI to help stakeholders monitor and analyze sales performance. This project transforms raw sales data into meaningful insights through intuitive visuals and dynamic filtering.",
+    tech: ["Power BI", "Data Visualization", "Business Intelligence"],
+    icon: "bar-chart",
+
+    sourceCode:
+      "https://github.com/AmitSingh1407/PowerBI.git",
   },
   
 ];
