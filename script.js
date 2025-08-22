@@ -113,7 +113,26 @@ const projects = [
     sourceCode:
       "https://github.com/AmitSingh1407/PowerBI.git",
   },
-  
+    {
+    title: "Twitter_Scraping-Using-MySQL",
+    description:
+      "Developed a data pipeline to scrape tweets from Twitter and store them in a structured MySQL database for analysis and visualization. The project involved extracting live Twitter data using Python libraries (such as Tweepy/Requests/BeautifulSoup), cleaning and processing the data, and designing a relational database schema to efficiently manage large datasets.",
+    tech: ["Python", "MySQL", "Data Scraping"],
+    icon: "bar-chart",
+
+    sourceCode:
+      "https://github.com/AmitSingh1407/Twitter_Scraping-Using-MySQL.git",
+  },
+  {
+    title: "Amazon-web-Scraping",
+    description:
+      "Developed a data pipeline to scrape product data from Amazon and store it in a structured MySQL database for analysis and visualization. The project involved extracting live product data using Python libraries (such as BeautifulSoup and Scrapy), cleaning and processing the data, and designing a relational database schema to efficiently manage large datasets.",
+    tech: ["Python", "MySQL", "Data Scraping"],
+    icon: "bar-chart",
+
+    sourceCode:
+      "https://github.com/AmitSingh1407/Amazon-web-Scraping",
+  },
 ];
 
 // Populate projects with buttons
