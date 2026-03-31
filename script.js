@@ -1,13 +1,16 @@
-// Initialize Lucide icons
-lucide.createIcons();
+// Initialize Lucide icons - moved to DOMContentLoaded
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
 
-hamburger.addEventListener("click", () => {
-  sidebar.classList.toggle("active");
-});
+if (hamburger && sidebar) {
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+  });
 
-sidebar.addEventListener("click", () => {
-  sidebar.classList.remove("active");
-});
+  sidebar.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+}
 
 // Initialize EmailJS with your public key
 emailjs.init("GpueqBAnzh-GFcfq-");
@@ -253,30 +256,36 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-});
 
-// Add dynamic badge animation
-const badges = document.querySelectorAll(".certificate-badge");
-badges.forEach((badge) => {
-  badge.addEventListener("click", () => {
-    badge.style.transform = "scale(1.1)";
-    setTimeout(() => {
-      badge.style.transform = "scale(1)";
-    }, 200);
+  // Add dynamic badge animation
+  const badges = document.querySelectorAll(".certificate-badge");
+  badges.forEach((badge) => {
+    badge.addEventListener("click", () => {
+      badge.style.transform = "scale(1.1)";
+      setTimeout(() => {
+        badge.style.transform = "scale(1)";
+      }, 200);
+    });
   });
+
+  // Initialize Lucide icons after DOM is ready
+  lucide.createIcons();
 });
 
 // Enhanced Contact Form Handling with SMTP
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+const contactForm = document.getElementById("contactForm");
 
-  // Get form values
-  const formData = {
-    name: document.getElementById("name").value,
-    phone: document.getElementById("phone").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const formData = {
+      name: document.getElementById("name").value,
+      phone: document.getElementById("phone").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
 
   // Basic form validation
   let isValid = true;
@@ -330,7 +339,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       submitButton.disabled = false;
       lucide.createIcons(); // Recreate icons after DOM update
     });
-});
+  });
+}
 
 // Notification system
 function showNotification(message, type) {
